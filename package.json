@@ -1,0 +1,24 @@
+{
+  "name": "robotics-backend",
+  "version": "1.0.0",
+  "description": "back end for robotics club",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JackShew/robotics-backend.git"
+  },
+  "keywords": [
+    "node",
+    "robotics"
+  ],
+  "author": "jackshew@outlook.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JackShew/robotics-backend/issues"
+  },
+  "homepage": "https://github.com/JackShew/robotics-backend"
+}
