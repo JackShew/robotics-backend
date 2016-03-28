@@ -1,23 +1,29 @@
-"use strict";
 console.log("starting");
-var restify = require('restify');
+
+import restify = require('restify');
+
 var count = 0;
 var name = "";
+
 var server = restify.createServer();
 server.use(restify.queryParser());
-server.get('/api/save', function (request, response, next) {
+
+server.get('/saveperson', (request, response, next) => {
     console.log(request.url, request.params);
     name = request.query.name;
     response.write('Remembering ' + name);
-    response.end();
+    response.end(); 
     next();
 });
-server.get('/api/display', function (request, response, next) {
+
+server.get('/listpeople', (request, response, next) => {
     console.log(request.url, request.params);
     response.write('Hello ' + name);
-    response.end();
+    response.end(); 
     next();
 });
+
+   
 server.listen(8080);
+
 console.log('Server is listening on port 8080');
-//# sourceMappingURL=server.js.map

@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -p .",
     "start": "node server.js"
   },
   "repository": {
@@ -20,5 +21,12 @@
   "bugs": {
     "url": "https://github.com/JackShew/robotics-backend/issues"
   },
-  "homepage": "https://github.com/JackShew/robotics-backend"
+  "homepage": "https://github.com/JackShew/robotics-backend",
+  "devDependencies": {
+    "typescript": "^1.8.9",
+    "typings": "^0.7.9"
+  },
+  "dependencies": {
+    "restify": "^4.0.4"
+  }
 }
