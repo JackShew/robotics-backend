@@ -5,14 +5,14 @@ var count = 0;
 var name = "";
 var server = restify.createServer();
 server.use(restify.queryParser());
-server.get('/api/save', function (request, response, next) {
+server.get('/saveperson', function (request, response, next) {
     console.log(request.url, request.params);
     name = request.query.name;
     response.write('Remembering ' + name);
     response.end();
     next();
 });
-server.get('/api/display', function (request, response, next) {
+server.get('/listpeople', function (request, response, next) {
     console.log(request.url, request.params);
     response.write('Hello ' + name);
     response.end();
